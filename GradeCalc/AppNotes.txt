@@ -1,0 +1,21 @@
+To-do
+
+- Enable VT-x (Vitrualization technology extension) in BIOS /
+
+- Work on app functionality
+	- add weights for percentages and find formula for grading
+
+- Plan / Design front end
+
+Vt-x
+- Intel technology for virtualization on x86, virtual machine extension
+
+x86
+- x86 instruction achitecture 64 bit ISA (instruction set architection) which is machine language to the processor, assembly commands
+ 	- called x86 because of 8086 intel microprocessor in 1976
+- ARM is a RISC (Reduced Instrution Set Computing) more general instructions using registers to load/store
+- x86 is a CISC (Complex Instruction Set Computing) single instruction doing complex things where it would take multiple commands from RISC architecture
+
+64-bit
+- 64 bit processors can reference much more memory than 32 bits because 2^64 which allows processors to have multiple cores, faster calculations
+- length of words (units) in the instructon set, number of bits being processed at a time, more locations to access so more memory
