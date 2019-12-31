@@ -14,3 +14,10 @@ Started 12/28/19
 - Started calculator
 
 
+Incorporate
+	- Final Grade calculator
+		- Grade needed for expected overall 
+		- Adding / Deleting entries
+		- Convenient Use with keyboard
+	- GPA Calculator
+
