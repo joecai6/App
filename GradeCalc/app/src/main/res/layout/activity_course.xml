@@ -20,71 +20,70 @@
 
     <EditText
         android:id="@+id/firstGradeText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
         android:hint="Grade 1"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
         app:layout_constraintBottom_toTopOf="@+id/calcButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.726"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <EditText
         android:id="@+id/secondGradeText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
+        android:layout_marginStart="67dp"
         android:ems="10"
         android:hint="Grade 2"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
+        app:layout_constraintBottom_toTopOf="@+id/thirdGradeText"
+        app:layout_constraintEnd_toEndOf="@+id/firstGradeText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/secondWeightText"
+        app:layout_constraintStart_toStartOf="@+id/firstGradeText"
+        app:layout_constraintTop_toBottomOf="@+id/firstGradeText"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <EditText
+        android:id="@+id/thirdGradeText"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Grade 3"
+        android:inputType="number|text|numberDecimal|textEmailAddress|phone"
+        app:layout_constraintBottom_toTopOf="@+id/forthGradeText"
         app:layout_constraintEnd_toEndOf="@+id/firstGradeText"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/firstGradeText"
         app:layout_constraintTop_toBottomOf="@+id/firstGradeText"
-        app:layout_constraintVertical_bias="0.064" />
-
-    <EditText
-        android:id="@+id/thirdGradeText"
-        android:layout_width="123dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:hint="Grade 2"
-        android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
-        app:layout_constraintEnd_toEndOf="@+id/firstGradeText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/firstGradeText"
-        app:layout_constraintTop_toBottomOf="@+id/firstGradeText"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <EditText
         android:id="@+id/forthGradeText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:hint="Grade 2"
+        android:hint="Grade 4"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
+        app:layout_constraintBottom_toTopOf="@+id/fifthGradeText"
         app:layout_constraintEnd_toEndOf="@+id/firstGradeText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstGradeText"
         app:layout_constraintTop_toBottomOf="@+id/firstGradeText"
-        app:layout_constraintVertical_bias="0.381" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <EditText
         android:id="@+id/fifthGradeText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:hint="Grade 2"
+        android:hint="Grade 5"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/firstGradeText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstGradeText"
@@ -93,76 +92,73 @@
 
     <EditText
         android:id="@+id/firstWeightText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
         android:hint="Weight 1"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/firstGradeText"
-        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
+        app:layout_constraintVertical_bias="0.239" />
 
     <EditText
         android:id="@+id/secondWeightText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
         android:hint="Weight 2"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
-        app:layout_constraintEnd_toEndOf="@+id/firstWeightText"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toTopOf="@+id/thirdWeightText"
+        app:layout_constraintEnd_toStartOf="@+id/secondGradeText"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstWeightText"
         app:layout_constraintTop_toBottomOf="@+id/firstWeightText"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.553" />
 
     <EditText
         android:id="@+id/thirdWeightText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:hint="Weight 2"
+        android:hint="Weight 3"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
-        app:layout_constraintEnd_toEndOf="@+id/firstWeightText"
+        app:layout_constraintBottom_toTopOf="@+id/forthWeightText"
+        app:layout_constraintEnd_toStartOf="@+id/thirdGradeText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstWeightText"
         app:layout_constraintTop_toBottomOf="@+id/firstWeightText"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <EditText
         android:id="@+id/forthWeightText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:hint="Weight 2"
+        android:hint="Weight 4"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
-        app:layout_constraintEnd_toEndOf="@+id/firstWeightText"
+        app:layout_constraintBottom_toTopOf="@+id/fifthWeightText"
+        app:layout_constraintEnd_toStartOf="@+id/forthGradeText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstWeightText"
         app:layout_constraintTop_toBottomOf="@+id/firstWeightText"
-        app:layout_constraintVertical_bias="0.381" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <EditText
         android:id="@+id/fifthWeightText"
-        android:layout_width="123dp"
+        android:layout_width="100dp"
         android:layout_height="38dp"
         android:ems="10"
-        android:hint="Weight 2"
+        android:hint="Weight 5"
         android:inputType="number|text|numberDecimal|textEmailAddress|phone"
-        android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/calcButton"
-        app:layout_constraintEnd_toEndOf="@+id/firstWeightText"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="@+id/fifthGradeText"
+        app:layout_constraintEnd_toStartOf="@+id/fifthGradeText"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstWeightText"
         app:layout_constraintTop_toBottomOf="@+id/firstWeightText"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/resultTextView"
@@ -173,10 +169,9 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/calcButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondGradeText"
-        app:layout_constraintVertical_bias="0.949" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addEntryButton"
@@ -186,12 +181,12 @@
         android:clickable="true"
         app:backgroundTint="#00FFFFFF"
         app:borderWidth="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondGradeText"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.697"
         app:rippleColor="#00F5F5F5" />
 
     <TextView
@@ -208,5 +203,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/subTextView1"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:text="Weight (%)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstWeightText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <TextView
+        android:id="@+id/subTextView2"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="56dp"
+        android:text="Grade (%)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstGradeText"
+        app:layout_constraintStart_toEndOf="@+id/subTextView1"
+        app:layout_constraintTop_toTopOf="@+id/subTextView1"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
